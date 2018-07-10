@@ -16,9 +16,9 @@ function nowServing (katzDeli){
   else {return `Currently serving ${katzDeli.shift()}.`}
 }
 
-var lineInfo= [`. ${name} `]
+var lineInfo= [`. ${katzDeli} `]
 
-function currentLine (katzDeli, name){
+function currentLine (katzDeli){
   let i=0;
   while (i < katzDeli.length){
   i++;}
