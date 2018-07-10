@@ -16,11 +16,11 @@ function nowServing (katzDeli){
   else {return `Currently serving ${katzDeli.shift()}.`}
 }
 
-
+var lineInfo=[]
 function currentLine (katzDeli){
   let i=0;
   while (i < katzDeli.length){
-    lineInfo= [`${i+1}. ${katzDeli[i]}`]
+    lineInfo=[`${i+1}. ${katzDeli[i]}`]
   i++;}
   
   if (katzDeli===0){return "The line is currently empty"}
