@@ -23,6 +23,6 @@ function currentLine (katzDeli){
     lineInfo=[...lineInfo, ` ${i+1}. ${katzDeli[i]}`]
   i++;}
   
-  if (katzDeli>0) {return `The line is currently: ${lineInfo}`}
+  if (katzDeli>1) {return `The line is currently: ${lineInfo}`}
   else {return "The line is currently empty."}
 }
