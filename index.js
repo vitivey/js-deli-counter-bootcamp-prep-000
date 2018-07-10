@@ -20,7 +20,7 @@ var lineInfo=[]
 function currentLine (katzDeli){
   let i=0;
   while (i < katzDeli.length){
-    lineInfo.push(` ${i+1}. ${katzDeli[i]}`)
+    lineInfo=[...lineInfo, `${i+1}. ${katzDeli[i]} `]
   i++;}
   
   if (lineInfo.length > 0) {return `The line is currently: ${lineInfo}`}
