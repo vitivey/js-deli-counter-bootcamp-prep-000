@@ -20,9 +20,9 @@ var lineInfo=[]
 function currentLine (katzDeli){
   let i=0;
   while (i < katzDeli.length){
-    lineInfo=[...lineInfo, `${i+1}. ${katzDeli[i]}`]
+    lineInfo=[...lineInfo, ` ${i+1}. ${katzDeli[i]}`]
   i++;}
   
-  if (katzDeli===0){return "The line is currently empty"}
+  if (katzDeli===[]){return "The line is currently empty."}
   else {return `The line is currently: ${lineInfo}`}
 }
